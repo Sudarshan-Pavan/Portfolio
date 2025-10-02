@@ -1,0 +1,263 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #34495E;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #FFF;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #1ABC9C;
+}
+
+.nav-list {
+    height: 10vh;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+    margin-left: auto;
+    list-style: none;
+}
+
+.home, 
+.about,
+.skills,
+.pande,
+.certifications,
+.contact{
+    height: 90vh;
+    position: absolute;
+    width: 100%;
+    color: #000000;
+}
+
+.home-content, 
+.about-content {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Comic Neue', sans-serif;
+    img{
+        height: 70%;
+        margin: 10px 50px; 
+    }
+    h1{
+        margin: 10px 50px;
+    }
+    p, details{
+        margin: 20px 50px;
+    }
+}
+
+.skills-content {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Comic Neue', sans-serif;
+    h1{
+        font-size: 30px;
+        margin: 10px 15px;
+    }
+    ul{
+        font-size: 25px;
+        margin: 7px 10px;
+    }
+    img{
+        height: 70%;
+        margin: 10px 50px; 
+    }
+}
+
+.pande-content {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Comic Neue', sans-serif;
+    h1{
+        font-size: 25px;
+        margin: 10px 15px;
+    }
+    li{
+        font-size: 17px;
+        margin: 12px 45px;
+    }
+}
+
+.certifications-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    justify-content: space-around;
+    font-family: 'Comic Neue', sans-serif;
+    h1{
+        margin: 10px 20px;
+    }
+}
+
+.certifications-table {
+    width: 100%;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: left;
+    font-size: 20px;
+    padding: 15px;
+    text-align: left;
+}
+
+.certifications-table th:nth-child(2),
+.certifications-table td:nth-child(2) {
+    padding-left: 20px; 
+    padding-right: 20px;
+}
+
+.certifications-presentation {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: auto;
+}
+
+.certifications-presentation figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.certifications-presentation img {
+    width: 250px;
+    height: auto;
+    max-width: 45%;
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+}
+
+.certifications-presentation img:hover {
+    transform: scale(2);
+}
+
+.contact-content{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Comic Neue', sans-serif;
+    h2{
+        font-size: 35px;
+    }
+    button{
+        width: 7.5%;
+        align-self: auto;
+    }
+    p{
+        margin: 50px;
+        font-size: 25px;
+    }
+    img{
+        height: 70%;
+        margin: 10px 50px; 
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: center;
+}
+
+label, input, textarea {
+    width: 100%; /* Optional: Make fields full-width */
+    height: 70%;
+}
+
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: fit-content;
+    min-width: 120px;
+    transition: all 0.5s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 5px;
+    height: 45px;
+    transition: all 0.3s ease;
+  }
+  
+  .cta span {
+    position: relative;
+    font-family: 'Comic Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+  }
+  
+  .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+  
+  .cta:hover:before {
+    width: 100%;
+    background: #b1dae7;
+  }
+  
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  
+  .cta:active {
+    transform: scale(0.95);
+  }
+
+.home,
+.about,
+.skills,
+.pande,
+.certifications,
+.contact{
+    background-image: linear-gradient(to left, #74ebd5 0%, #9face6 100%);
+}
+

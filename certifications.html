@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta httpequiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./style/style.scss" />
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+        <style>
+            figcaption {
+                font-size: 14px; /* Adjust caption size */
+                color: black; /* Caption color */
+                margin-top: 5px; /* Adds some spacing between image and caption */
+                text-align: center;
+            }
+        </style>
+        <title>Certifications</title>
+    </head>
+    <body>
+        <nav>
+            <ul class="nav-list">
+                <li><a class="nav-links" href="./index.html">Home</a></li>
+                <li><a class="nav-links" href="./about.html">About</a></li>
+                <li><a class="nav-links" href="./skills.html">Skills</a></li>
+                <li><a class="nav-links" href="./pande.html">Projects and Experience</a></li>
+                <li><a class="nav-links" href="./certifications.html">Certifications</a></li>
+                <li><a class="nav-links" href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main data-router-wrapper>
+            <section data-router-view="certifications" class="certifications">
+                <div class="certifications-content">
+                    <!-- Heading -->
+                    <h1><u>Certifications:</u></h1>
+                    <div class="certifications-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Certification</th>
+                                    <th>Institution</th>
+                                    <th>Year</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>AI & ML in Collaboration with Google</td>
+                                    <td>SmartInternz with Google developers</td>
+                                    <td>2023</td>
+                                </tr>
+                                <tr>
+                                    <td>Automated Feature Extraction from High-Resolution Images</td>
+                                    <td>IIRS; ISRO</td>
+                                    <td>2023</td>
+                                </tr>
+                                <tr>
+                                    <td>Lead Generation Messenger Chatbot Creation</td>
+                                    <td>Coursera</td>
+                                    <td>2023</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+        
+                    <!-- Image Grid -->
+                    <div class="certifications-presentation">
+                        <figure>
+                            <img src="certificates images/smartInternz AI&ML.png" alt="AI & ML in collaboration with Google Developers" width="300">
+                            <figcaption>AI & ML in collaboration with Google Developers</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="certificates images/image feature extraction.png" alt="Automated Feature Extraction from High-Resolution Images (IIRS; ISRO)" width="300">
+                            <figcaption>Automated Feature Extraction (IIRS; ISRO)</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="certificates images/lead generation messenger.png" alt="Lead Generation Messenger Chatbot Creation" width="300">
+                            <figcaption>Lead Generation Messenger Chatbot Creation</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="certificates images/ELA.png" alt="English Literary Association outreach program member" width="300">
+                            <figcaption>English Literary Association member</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="certificates images/otaku heaven.png" alt="Japanese club design and video editing team" width="300">
+                            <figcaption>Japanese club design and video editing team</figcaption>
+                        </figure>
+                    </div>
+        
+                </div>
+            </section>
+        </main>        
+        <script type="module" src="./js/index.js"></script>
+  
+    </body>
+</html>

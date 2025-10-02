@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style/style.scss" />
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+        <title>Contact</title>
+    </head>
+    <body>
+        <nav>
+            <ul class="nav-list">
+                <li><a class="nav-links" href="./index.html">Home</a></li>
+                <li><a class="nav-links" href="./about.html">About</a></li>
+                <li><a class="nav-links" href="./skills.html">Skills</a></li>
+                <li><a class="nav-links" href="./pande.html">Projects and Experience</a></li>
+                <li><a class="nav-links" href="./certifications.html">Certifications</a></li>
+                <li><a class="nav-links" href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main data-router-wrapper>
+            <section data-router-view="contact" class="contact">
+                <div class="contact-content">
+                    <div class="contact-presentation">
+                        <h2><u>Contact Me</u></h2>
+                        <form action="mailto:pavan132204@gmail.com" method="post" enctype="text/plain">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                            
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                            <button class="cta">
+                                <span>Send</span>
+                                <svg width="15px" height="10px" viewBox="0 0 13 10">
+                                  <path d="M1,5 L11,5"></path>
+                                  <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
+                            </button>
+                        </form>
+                        <p>Follow me: 
+                            <a href="https://www.linkedin.com/in/pavan-kumar-02a4b6249/" target="_blank">LinkedIn</a> | 
+                            <a href="https://github.com/Sudarshan-Pavan" target="_blank">GitHub</a>
+                        </p>
+                    </div>
+                    <img src="./bg images/contact 1.png" alt="Contact">
+                </div>
+            </section>
+        </main>
+        <script type="module" src="./js/index.js"></script>
+
+    </body>
+</html>
